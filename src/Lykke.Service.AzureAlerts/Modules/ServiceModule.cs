@@ -36,9 +36,14 @@ namespace Lykke.Service.AzureAlerts.Modules
                 .As<IHealthService>()
                 .SingleInstance();
 
+            builder.RegisterType<AzureAlertsToSlackService>()
+                .As<IAzureAlertsToSlackService>();
+
             // TODO: Add your dependencies here
 
             builder.Populate(_services);
         }
+
+
     }
 }

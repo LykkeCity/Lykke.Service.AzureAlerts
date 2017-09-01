@@ -9,6 +9,7 @@
     public class AzureAlertsSettings
     {
         public DbSettings Db { get; set; }
+        public string Secret { get; set; }
     }
 
     public class DbSettings
