@@ -25,7 +25,7 @@ namespace Lykke.Service.AzureAlerts.Services
         private static string FormatMessage(AzureAlertNotification notification)
         {
             var cond = notification.Context.Condition;
-            return $"Status\t{notification.Status}.\t{cond.MetricName} value is\t{cond.MetricValue} {cond.MetricUnit}\t{cond.Operator}\t{cond.Threshold} {cond.MetricUnit}";
+            return $"Alarm status [{notification.Status}]. Metric name [{cond.MetricName}] value is [{cond.MetricValue} {cond.MetricUnit}]. Operator [{cond.Operator}]. Threshold value is [{cond.Threshold} {cond.MetricUnit}]";
         }
     }
 }

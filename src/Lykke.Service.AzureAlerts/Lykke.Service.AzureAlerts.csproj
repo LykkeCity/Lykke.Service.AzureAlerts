@@ -48,7 +48,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\Lykke.Service.AzureAlerts.AzureRepositories\Lykke.Service.AzureAlerts.AzureRepositories.csproj" />
     <ProjectReference Include="..\Lykke.Service.AzureAlerts.Core\Lykke.Service.AzureAlerts.Core.csproj" />
     <ProjectReference Include="..\Lykke.Service.AzureAlerts.Services\Lykke.Service.AzureAlerts.Services.csproj" />
   </ItemGroup>
